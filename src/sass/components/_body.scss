@@ -1,0 +1,62 @@
+.l-container {
+    background-color: #fff;
+    padding: 1.5em;
+    width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    /* grid-auto-flow  Esta propiedad controla el flujo del grid  -- valor por default row -- posibles valores --> row | column | row dense | column dense */
+    grid-template-columns: 75% 1fr;
+    grid-template-rows: 100px repeat(4,50vh);
+    grid-gap: 1em 1em;
+    grid-template-areas: "header header"
+                         "section-perfil section-perfil" 
+                         "section-experiencia_laboral section-experiencia_laboral" 
+                         "section-formacion section-formacion"
+                         "sidebar-habilidades sidebar-habilidades"
+                         "sidebar-proyectos sidebar-proyectos"
+}
+.container--info__Perfil,
+.container--aside__Herramientas,
+.container--aside__Proyectos,
+.container--info__Experiencia,
+.container--info__Formacion {
+    margin-top: 2em;
+    padding: 1em;
+    text-align: justify;
+}
+.container--info__Experiencia,
+.container--info__Formacion
+{ 
+
+}
+.header {
+    grid-area: header;
+ }
+
+.container--info__Perfil {
+    grid-area: section-perfil;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container--aside__Herramientas {
+    grid-area: sidebar-habilidades;
+    display:none;
+}
+
+.container--aside__Proyectos {
+    grid-area: sidebar-proyectos;
+}
+
+.container--info__Experiencia {
+    
+    grid-area: section-experiencia_laboral;
+}
+.container--info__Formacion {
+    grid-area: section-formacion;
+}
+
+.remodelacion{
+    widows: 400px;
+    height: 500px;
+}

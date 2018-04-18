@@ -1,0 +1,27 @@
+.header { 
+    display: flex;
+    justify-content: space-between;
+    color:$link-color;
+    width: 100%;
+}
+.info_contact {
+    display:none;
+}
+.nombre{ 
+    margin-top:0;
+    
+}
+
+.logo{
+    width: 168px;
+    height: 42px;
+}
+.nombre_link {
+    color:$link-color;
+    font-size: $font-size-tittle--movil;
+    font-family: $font_family;
+    display: block;
+    &:hover { 
+        color:$link-hover-color;
+    }
+}

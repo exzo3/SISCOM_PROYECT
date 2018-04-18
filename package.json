@@ -1,0 +1,28 @@
+{
+  "name": "development_front_end",
+  "version": "1.0.0",
+  "description": "entorno de desarrollo front-end",
+  "main": "index.js",
+  "scripts": {
+    "pug": "pug -w -P -p ./src/pug/includes/ ./src/pug/pages/ -o ./public",
+    "sass": "node-sass -w ./src/sass/main.scss ./public/css/main.css",
+    "server": "browser-sync start --server --files 'public/*' --startPath public",
+    "metalangs": "parallelshell \"npm run sass\" \"npm run pug\"",
+    "devserve": "parallelshell \"npm run metalangs\" \"npm run server\""
+  },
+  "author": "Rudy Valle",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.5.3",
+    "pug": "^2.0.0-rc.4",
+    "pug-cli": "^1.0.0-alpha6"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-latest": "^6.24.1",
+    "browser-sync": "^2.18.13",
+    "eslint": "^4.10.0",
+    "eslint-plugin-react": "^7.4.0",
+    "parallelshell": "^3.0.2"
+  }
+}

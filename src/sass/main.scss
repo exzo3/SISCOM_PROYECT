@@ -1,0 +1,13 @@
+@import 'components/resets';
+@import 'components/vars';
+@import 'components/body';
+@import 'components/header';
+@import 'components/nav';
+
+html { 
+    box-sizing: border-box;
+    font-size:$font-size-movil;
+}
+
+body { 
+}

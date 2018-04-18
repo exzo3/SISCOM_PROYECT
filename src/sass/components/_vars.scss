@@ -1,0 +1,42 @@
+/*  =======================
+    == Background color  ==
+    =======================
+*/  $body-bg      : #fff;
+    $header-bg    : rgb(36, 36, 59);
+
+/*
+    ======================================================================
+    ==  Font, line-height, and color for body text, headings, and more. ==
+    ====================================================================== 
+*/
+
+    $font-family            : sans-serif;                                                      
+    $font-size-h1           : 16px;                                   
+    $font-size-h2           : 30px;
+    $font-size-h3           : 24px;
+    $font-size-h4           : 18px;
+    $font-size-h5           : 14px;
+    $font-size-h6           : 12px;
+    
+    //line-height
+    $line-height-base       : 1.5em;
+
+    //link color
+
+    $link-color   : #dc2520;
+    $link-hover-color : darken($link-color, 15%);
+
+/*
+    ==============================
+    ==  Responsive Breakpoints  ==
+    ==============================
+*/  $device_small_vertical: 320px;
+    $device_small_horizontal: 470px;
+    $device_medium_vertical: 600px;
+    $device_medium_horizontal: 768px;
+    $device_large_vertical: 1024px;
+    $device_large_horizontal: 1200px;
+
+    //font-size
+        $font-size-movil        : 13px;                                    
+        $font-size-tittle--movil: 30px;                                   

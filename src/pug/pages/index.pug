@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet")
+        link(href="css/main.css" rel="stylesheet")
+        title Rudy Valle
+    body
+        .wrapper
+            -var herramientas = ["Sass","PugJs","Node","Npm scripts","Git(github)","Bootstrap"];
+            -var nav = ["Home","Proyectos","Blog","Contacto"];
+            -var info_personal = ["Email: rvallejr@gmail.com","Telf: +56941163965"];    
+    <!-- Navegacion -->
+            nav.main-nav
+                ul.main-menu
+                each val in nav
+                        li.main-menu__items
+                            a(href="#" class="main-menu__links")= val
+
+    <!-- Informacion personal-->
+    <!-- header -->
+            .l-container
+                header.header
+                    .nombre
+                        a(href="#" class="nombre_link")
+                            img(src="./img/logo.png" class="logo")
+                    .info_contact
+                        ul.contact-info
+                        each val in info_personal
+                            li.main-menu__items
+                             a(href="#" class="main-menu__links")= val
+                        
+                .container--info__Perfil
+                    img(src="./img/trabajando.svg",  class="remodelacion")
+                    h1(class="tittle") Actualmente en Remodelación
+
+
+
+
+
+
+
+
+
+
